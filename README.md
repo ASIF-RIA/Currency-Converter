@@ -181,4 +181,3 @@ This project is provided as-is for development purposes.
 For issues or questions, please refer to:
 - [Expo Documentation](https://docs.expo.dev/)
 - [React Native Documentation](https://reactnative.dev/)
-
