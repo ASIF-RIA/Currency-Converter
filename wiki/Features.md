@@ -5,12 +5,14 @@ Currency Converter provides comprehensive currency conversion capabilities with 
 ## Core Features
 
 ### Currency Support
+
 The application supports over 160 currencies from countries and territories worldwide, organized alphabetically for easy access. Each currency entry includes:
 - Three-letter currency code
 - Full currency name
 - Currency symbol
 
-**Regional Coverage:**
+Regional Coverage
+
 - Africa: Nigerian Naira, South African Rand, Egyptian Pound, Kenyan Shilling, Moroccan Dirham, and others
 - Asia: Chinese Yuan, Japanese Yen, Indian Rupee, Thai Baht, Philippine Peso, Indonesian Rupiah, Malaysian Ringgit, Vietnamese Dong, Pakistani Rupee
 - Europe: Euro, British Pound, Swiss Franc, Swedish Krona, Norwegian Krone, Polish Zloty, Czech Koruna, Hungarian Forint
@@ -19,6 +21,7 @@ The application supports over 160 currencies from countries and territories worl
 - Oceania: Australian Dollar, New Zealand Dollar, Fijian Dollar
 
 ### Real-Time Exchange Rates
+
 - Live exchange rates from exchangerate-api.com
 - Daily automatic updates
 - Smart caching system with 1-hour retention
@@ -26,6 +29,7 @@ The application supports over 160 currencies from countries and territories worl
 - Timestamp display showing last rate change
 
 ### Conversion System
+
 - Instant conversion during input
 - Precision to two decimal places
 - Exchange rate transparency display
@@ -35,6 +39,7 @@ The application supports over 160 currencies from countries and territories worl
 ## User Interface
 
 ### Home Screen
+
 The main conversion interface features:
 - Large input field for amount entry
 - Currency selector buttons for both source and target currencies
@@ -43,6 +48,7 @@ The main conversion interface features:
 - Last updated timestamp
 
 ### Currency Selection Screen
+
 Features for selecting currencies:
 - Search functionality for quick filtering
 - Complete list of 160+ supported currencies
@@ -51,12 +57,14 @@ Features for selecting currencies:
 - Alphabetically organized entries
 
 ### Settings Screen
+
 Configuration options include:
 - Cache management controls
 - Application information display
 - Navigation to additional screens
 
 ### About Screen
+
 Information display includes:
 - Application version number
 - Feature list
@@ -67,17 +75,20 @@ Information display includes:
 ## Performance Features
 
 ### Offline Support
+
 - One-hour cache of exchange rates
 - Functionality without internet connection using cached data
 - Automatic refresh when connection restored
 
 ### Automatic Updates
+
 - 24-hour automatic refresh cycle
 - Hourly checks for data staleness
 - Updates triggered only when rates change
 - Intelligent timestamp preservation
 
 ### Optimization
+
 - Instant user interface updates
 - Smooth transition animations
 - Optimized rendering process
@@ -87,6 +98,7 @@ Information display includes:
 ## Privacy and Security
 
 ### Privacy Implementation
+
 - No personal data collection
 - No user account requirement
 - No registration process
@@ -94,6 +106,7 @@ Information display includes:
 - No user tracking
 
 ### Security Measures
+
 - Secure HTTPS connections
 - No external server data storage
 - Local-only caching
@@ -102,6 +115,7 @@ Information display includes:
 ## User Experience
 
 ### Usability
+
 - Intuitive interface design
 - Clear navigation structure
 - Descriptive labels
@@ -109,6 +123,7 @@ Information display includes:
 - Age-appropriate for all users
 
 ### Design System
+
 - Modern aesthetics
 - Smooth transitions
 - Consistent styling
@@ -116,6 +131,7 @@ Information display includes:
 - Purple and blue gradient theme
 
 ### Search and Filter
+
 - Quick search in currency list
 - Filter by code or name
 - Instant result display
@@ -124,6 +140,7 @@ Information display includes:
 ## Technical Implementation
 
 ### Technology Stack
+
 - React Native for cross-platform development
 - Expo for streamlined development
 - React Navigation for screen management
@@ -131,6 +148,7 @@ Information display includes:
 - RESTful API integration
 
 ### Data Source
+
 - exchangerate-api.com service
 - Public, free API access
 - Regular update schedule

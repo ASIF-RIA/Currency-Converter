@@ -6,10 +6,10 @@ This guide provides instructions for setting up the Currency Converter applicati
 
 The following software is required:
 
-- Node.js version 14 or higher - [Download](https://nodejs.org/)
+- Node.js version 14 or higher
 - npm or yarn package manager (included with Node.js)
-- Expo CLI - Install using `npm install -g expo-cli`
-- Android Studio for Android builds - [Download](https://developer.android.com/studio)
+- Expo CLI (Install using npm install -g expo-cli)
+- Android Studio for Android builds
 
 ## Installation
 
@@ -99,6 +99,7 @@ Currency-Converter/
 ## Troubleshooting
 
 ### Build Issues
+
 ```bash
 # Clear cache and reinstall dependencies
 npm cache clean --force
@@ -107,12 +108,14 @@ npm install
 ```
 
 ### Expo Issues
+
 ```bash
 # Clear Expo cache
 expo start -c
 ```
 
 ### Android Issues
+
 - Verify Android Studio installation
 - Confirm Android SDK configuration
 - Ensure emulator is running
@@ -126,5 +129,5 @@ expo start -c
 
 ## Support
 
-- Review [GitHub Issues](https://github.com/ASIF-RIA/Currency-Converter/issues)
+- Review GitHub Issues
 - Contact: rakibulasif84@gmail.com
