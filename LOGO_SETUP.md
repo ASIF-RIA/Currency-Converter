@@ -120,3 +120,4 @@ Your logo will appear:
 - In the app store listing (when you upload)
 
 
+

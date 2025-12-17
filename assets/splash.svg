@@ -1,0 +1,14 @@
+<svg width="1284" height="2778" viewBox="0 0 1284 2778" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1284" height="2778" fill="url(#paint0_linear)"/>
+<g transform="translate(422, 1169) scale(2)">
+<path d="M110 20H90V0H70V20H50V0H30V20H-20C-31 20 -40 29 -40 40V70C-40 81 -31 90 -20 90H90V110H-50V130H-30V150H-10V130H10V150H30V130H80C91 130 100 121 100 110V80C100 69 91 60 80 60H-30V40H110V20Z" fill="white"/>
+</g>
+<text x="642" y="1600" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">CURRENCY</text>
+<text x="642" y="1700" font-family="Arial, sans-serif" font-size="60" fill="white" fill-opacity="0.8" text-anchor="middle" letter-spacing="4">CONVERTER</text>
+<defs>
+<linearGradient id="paint0_linear" x1="642" y1="0" x2="642" y2="2778" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6200EE"/>
+<stop offset="1" stop-color="#4A90E2"/>
+</linearGradient>
+</defs>
+</svg>

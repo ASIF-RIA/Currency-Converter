@@ -1,0 +1,101 @@
+Currency Converter - 160+ Currencies
+
+Convert 160+ currencies with real-time exchange rates. Fast and accurate.
+
+Convert currencies instantly with real-time exchange rates for over 160 currencies worldwide!
+
+🌍 COMPREHENSIVE CURRENCY SUPPORT
+✓ 160+ currencies from all countries and territories
+✓ Support for major currencies: USD, EUR, GBP, JPY, CNY, INR
+✓ Includes African currencies: NGN, ZAR, EGP, KES
+✓ Asian currencies: THB, PHP, IDR, MYR, VND, PKR
+✓ European currencies: EUR, GBP, CHF, SEK, NOK, PLN
+✓ Americas: USD, CAD, BRL, MXN, ARS, CLP
+✓ Middle Eastern currencies: AED, SAR, QAR, KWD
+✓ Oceania currencies: AUD, NZD, FJD
+✓ Exotic and regional currencies included
+
+💱 REAL-TIME EXCHANGE RATES
+✓ Live exchange rates updated daily
+✓ Powered by reliable exchangerate-api.com
+✓ Automatic 24-hour refresh for fresh data
+✓ Smart timestamp showing when rates last changed
+✓ One-hour caching for fast offline access
+
+⚡ FAST & EASY TO USE
+✓ Clean, modern, intuitive interface
+✓ Instant conversion as you type
+✓ Quick currency swap button
+✓ Searchable currency list for easy selection
+✓ Shows currency names, codes, and symbols
+✓ Exchange rate display for transparency
+
+🎨 BEAUTIFUL DESIGN
+✓ Modern Material Design interface
+✓ Smooth animations and transitions
+✓ Easy-to-read fonts and layouts
+✓ Professional color scheme
+✓ Optimized for all screen sizes
+✓ Portrait and landscape support
+
+🔒 PRIVACY FOCUSED
+✓ No personal data collection
+✓ No user accounts required
+✓ No registration needed
+✓ Completely free to use
+✓ No advertisements
+✓ Offline mode with cached rates
+✓ Minimal permissions (only internet)
+
+📊 KEY FEATURES
+• Convert between any of 160+ world currencies
+• Real-time exchange rates updated daily
+• See exact exchange rates for transparency
+• Track when rates were last updated
+• Swap currencies with one tap
+• Search and filter currencies easily
+• Offline mode with smart caching
+• Beautiful, intuitive Material Design
+• No ads, no tracking, no data collection
+• Completely free forever
+
+📱 FOUR INTUITIVE SCREENS
+1. Home: Quick currency conversion with live rates
+2. Currency Selection: Easy search and selection
+3. Settings: Manage app preferences and cache
+4. About: App information and features
+
+Perfect for:
+✈️ International travelers planning trips abroad
+💼 Business professionals with international transactions
+🏦 Finance enthusiasts tracking currency markets
+🎓 Students studying economics and finance
+🛍️ Online shoppers buying from international stores
+💰 Freelancers working with international clients
+🌐 Anyone dealing with multiple currencies
+
+Why Choose Currency Converter?
+• Most comprehensive currency support (160+ currencies)
+• Daily automatic updates keep rates fresh
+• No hidden fees or premium features
+• Respects your privacy - no data collection
+• Simple, fast, and reliable
+• Regular updates and improvements
+• Developed with modern technology (React Native)
+
+Supported Currency Examples:
+USD (US Dollar), EUR (Euro), GBP (British Pound), JPY (Japanese Yen), CNY (Chinese Yuan), INR (Indian Rupee), AUD (Australian Dollar), CAD (Canadian Dollar), CHF (Swiss Franc), SGD (Singapore Dollar), HKD (Hong Kong Dollar), KRW (Korean Won), MXN (Mexican Peso), BRL (Brazilian Real), ZAR (South African Rand), RUB (Russian Ruble), TRY (Turkish Lira), AED (UAE Dirham), SAR (Saudi Riyal), THB (Thai Baht), IDR (Indonesian Rupiah), MYR (Malaysian Ringgit), PHP (Philippine Peso), VND (Vietnamese Dong), PKR (Pakistani Rupee), EGP (Egyptian Pound), NGN (Nigerian Naira), and 130+ more!
+
+Technical Details:
+• Built with React Native and Expo
+• Exchange rates from exchangerate-api.com
+• Automatic daily rate updates
+• Smart caching for performance
+• Optimized for Android 5.0+
+• Small app size, minimal battery usage
+
+Download Currency Converter now and simplify your currency conversions!
+
+Have feedback or suggestions? Contact us at [your-email@example.com]
+
+Keywords: currency, converter, exchange rate, forex, money, travel, international, finance, calculator, conversion, rates, world currencies, real-time

@@ -17,14 +17,14 @@ export default function AboutScreen() {
           <Text style={styles.sectionTitle}>About</Text>
           <Text style={styles.description}>
             A simple and intuitive currency converter app that provides real-time
-            exchange rates for over 20 major world currencies.
+            exchange rates for 160+ currencies from around the world.
           </Text>
         </View>
 
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Features</Text>
           <Text style={styles.feature}>• Real-time exchange rates</Text>
-          <Text style={styles.feature}>• Support for 20+ currencies</Text>
+          <Text style={styles.feature}>• Support for 160+ currencies worldwide</Text>
           <Text style={styles.feature}>• Easy currency selection</Text>
           <Text style={styles.feature}>• Quick swap between currencies</Text>
           <Text style={styles.feature}>• Clean and modern interface</Text>
@@ -115,5 +115,6 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
 });
+
 
 

@@ -1,11 +1,11 @@
 # Currency Converter Mobile App
 
-A simple and intuitive currency converter app built with React Native and Expo. The app provides real-time exchange rates for over 20 major world currencies.
+A simple and intuitive currency converter app built with React Native and Expo. The app provides real-time exchange rates for 160+ currencies from around the world.
 
 ## Features
 
 - **Real-time Exchange Rates**: Fetches up-to-date exchange rates from exchangerate-api.com
-- **20+ Currencies**: Support for major world currencies including USD, EUR, GBP, JPY, and more
+- **160+ Currencies**: Support for currencies from all countries and territories worldwide including USD, EUR, GBP, JPY, and many more
 - **Easy Navigation**: Simple 4-screen interface
 - **Quick Swap**: Instantly swap between base and target currencies
 - **Search Functionality**: Easy currency search and selection

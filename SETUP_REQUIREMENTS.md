@@ -235,3 +235,4 @@ npx expo install --fix
 That's it! You're ready to develop and build your app! 🚀
 
 
+

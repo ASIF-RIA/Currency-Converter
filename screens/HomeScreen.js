@@ -19,6 +19,8 @@ export default function HomeScreen({ navigation }) {
   const [exchangeRate, setExchangeRate] = useState(null);
   const [loading, setLoading] = useState(false);
   const [rates, setRates] = useState(null);
+  const [previousRates, setPreviousRates] = useState(null);
+  const [lastUpdated, setLastUpdated] = useState(null);
 
   useEffect(() => {
     loadExchangeRates();
@@ -30,11 +32,69 @@ export default function HomeScreen({ navigation }) {
     }
   }, [amount, fromCurrency, toCurrency, rates]);
 
+  // Auto-refresh every 24 hours
+  useEffect(() => {
+    const checkAndRefresh = () => {
+      if (lastUpdated) {
+        const now = new Date();
+        const diffHours = (now - lastUpdated) / (1000 * 60 * 60);
+
+        // Refresh if data is older than 24 hours
+        if (diffHours >= 24) {
+          console.log('Auto-refreshing exchange rates (24 hours passed)');
+          loadExchangeRates();
+        }
+      }
+    };
+
+    // Check immediately on mount
+    checkAndRefresh();
+
+    // Set up interval to check every hour
+    const interval = setInterval(checkAndRefresh, 60 * 60 * 1000); // Check every hour
+
+    return () => clearInterval(interval);
+  }, [lastUpdated, fromCurrency]);
+
   const loadExchangeRates = async () => {
     setLoading(true);
     try {
       const data = await currencyService.getExchangeRates(fromCurrency);
+
+      // Check if rates have actually changed
+      let ratesChanged = false;
+
+      if (!previousRates || !previousRates.rates) {
+        // First time loading, consider it as changed
+        ratesChanged = true;
+      } else if (data.base !== previousRates.base) {
+        // Base currency changed
+        ratesChanged = true;
+      } else {
+        // Compare exchange rates
+        const oldRates = previousRates.rates;
+        const newRates = data.rates;
+
+        // Check if any rate has changed
+        for (const currency in newRates) {
+          if (oldRates[currency] !== newRates[currency]) {
+            ratesChanged = true;
+            break;
+          }
+        }
+      }
+
       setRates(data);
+      setPreviousRates(data);
+
+      // Only update the timestamp if rates have actually changed
+      if (ratesChanged) {
+        setLastUpdated(new Date());
+        console.log('Exchange rates changed - timestamp updated');
+      } else {
+        console.log('Exchange rates unchanged - timestamp preserved');
+      }
+
       calculateRate(data);
     } catch (error) {
       Alert.alert('Error', error.message);
@@ -90,6 +150,23 @@ export default function HomeScreen({ navigation }) {
   const getCurrencySymbol = (code) => {
     const currency = currencyService.getAllCurrencies().find(c => c.code === code);
     return currency ? currency.symbol : code;
+  };
+
+  const formatUpdateTime = () => {
+    if (!lastUpdated) return 'Never';
+
+    const now = new Date();
+    const diffMs = now - lastUpdated;
+    const diffMins = Math.floor(diffMs / 60000);
+    const diffHours = Math.floor(diffMs / 3600000);
+
+    if (diffMins < 1) return 'Just now';
+    if (diffMins === 1) return '1 minute ago';
+    if (diffMins < 60) return `${diffMins} minutes ago`;
+    if (diffHours === 1) return '1 hour ago';
+    if (diffHours < 24) return `${diffHours} hours ago`;
+
+    return lastUpdated.toLocaleString();
   };
 
   return (
@@ -157,6 +234,15 @@ export default function HomeScreen({ navigation }) {
           <View style={styles.rateInfo}>
             <Text style={styles.rateText}>
               1 {fromCurrency} = {exchangeRate.toFixed(4)} {toCurrency}
+            </Text>
+          </View>
+        )}
+
+        {/* Last Updated Time */}
+        {lastUpdated && !loading && (
+          <View style={styles.updateTimeContainer}>
+            <Text style={styles.updateTimeText}>
+              🕐 Last updated: {formatUpdateTime()}
             </Text>
           </View>
         )}
@@ -292,6 +378,16 @@ const styles = StyleSheet.create({
     color: '#666',
     textAlign: 'center',
   },
+  updateTimeContainer: {
+    marginTop: 8,
+    paddingTop: 8,
+  },
+  updateTimeText: {
+    fontSize: 12,
+    color: '#999',
+    fontStyle: 'italic',
+    textAlign: 'center',
+  },
   navButtons: {
     flexDirection: 'row',
     justifyContent: 'space-around',
@@ -309,5 +405,6 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
 });
+
 
 

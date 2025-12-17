@@ -16,7 +16,7 @@ A complete, production-ready currency converter mobile app with the following fe
    - Navigation to Settings and About
 
 2. **Currency Selection Screen** (`screens/CurrencySelectScreen.js`)
-   - Searchable list of 20+ currencies
+   - Searchable list of 160+ currencies from all countries
    - Visual selection indicator
    - Reusable for both base and target currency selection
 
@@ -35,7 +35,7 @@ A complete, production-ready currency converter mobile app with the following fe
 
 - ✅ React Native with Expo framework
 - ✅ Real-time exchange rates from exchangerate-api.com
-- ✅ Support for 20+ major currencies
+- ✅ Support for 160+ currencies worldwide
 - ✅ Caching system for exchange rates (1-hour cache)
 - ✅ Modern, clean UI with Material Design principles
 - ✅ Full navigation between screens
@@ -120,8 +120,8 @@ eas build --platform android --profile production
 
 ## 📱 App Features
 
-### Supported Currencies (20+)
-USD, EUR, GBP, JPY, AUD, CAD, CHF, CNY, INR, SGD, HKD, NZD, KRW, MXN, BRL, ZAR, RUB, TRY, AED, SAR, and more
+### Supported Currencies (160+)
+Includes currencies from all continents: USD, EUR, GBP, JPY, AUD, CAD, CHF, CNY, INR, SGD, HKD, NZD, KRW, MXN, BRL, ZAR, RUB, TRY, AED, SAR, THB, PHP, IDR, MYR, VND, PKR, EGP, NGN, and 130+ more.
 
 ### Key Functionality
 - Real-time exchange rate conversion
@@ -197,5 +197,6 @@ All you need to do is:
 5. Submit to Google Play
 
 Good luck with your submission! 🚀
+
 
 

@@ -4,8 +4,11 @@
     "slug": "currency-converter",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
       "backgroundColor": "#4A90E2"
     },
     "assetBundlePatterns": [
@@ -16,15 +19,24 @@
       "bundleIdentifier": "com.currencyconverter.app"
     },
     "android": {
+      "icon": "./assets/icon.png",
       "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#4A90E2"
       },
       "package": "com.currencyconverter.app",
       "versionCode": 1,
-      "permissions": ["INTERNET"]
+      "permissions": [
+        "INTERNET"
+      ]
     },
     "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c72196ca-e3e0-4dcf-9a55-fcf11ae9c51a"
+      }
     }
   }
 }
-
