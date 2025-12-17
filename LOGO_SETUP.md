@@ -119,3 +119,4 @@ Your logo will appear:
 - On the splash screen when app launches
 - In the app store listing (when you upload)
 
+
